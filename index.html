@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Providence Goma Goma — Portfolio</title>
+  <meta name="description" content="Portfolio de Providence Goma Goma — Administration Systèmes, Réseaux & Cloud Azure." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#101a33; --muted:#9db0d1; --text:#e9f0ff;
+      --accent:#4fc3f7; --accent2:#7c5cff; --ok:#2ee59d;
+      --border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(79,195,247,.25), transparent 60%),
+                  radial-gradient(900px 600px at 110% 10%, rgba(124,92,255,.18), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 60px}
+    .topbar{
+      display:flex; gap:14px; justify-content:space-between; align-items:center; flex-wrap:wrap;
+      padding:14px 16px; border:1px solid var(--border); background:rgba(16,26,51,.65);
+      backdrop-filter: blur(10px); border-radius:16px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px; padding:7px 10px; border-radius:999px;
+      border:1px solid var(--border); background:rgba(255,255,255,.04); color:var(--muted);
+      font-size:13px;
+    }
+    .grid{display:grid; gap:16px; margin-top:16px}
+    @media(min-width:900px){ .grid{grid-template-columns: 1.3fr .7fr;} }
+    .card{
+      border:1px solid var(--border); background:rgba(16,26,51,.70); backdrop-filter: blur(10px);
+      border-radius:18px; padding:18px;
+    }
+    .hero{
+      display:flex; gap:16px; align-items:center; flex-wrap:wrap;
+    }
+    .photo{
+      width:86px; height:86px; border-radius:18px; border:1px solid var(--border);
+      background:linear-gradient(135deg, rgba(79,195,247,.25), rgba(124,92,255,.18));
+      overflow:hidden; flex:0 0 auto;
+    }
+    .photo img{width:100%; height:100%; object-fit:cover; display:block}
+    h1{margin:0; font-size:26px; letter-spacing:.2px}
+    .subtitle{color:var(--muted); margin-top:6px}
+    .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px; padding:10px 12px; border-radius:12px;
+      border:1px solid var(--border); background:rgba(255,255,255,.04); color:var(--text);
+      font-size:14px;
+    }
+    .btn.primary{background:linear-gradient(135deg, rgba(79,195,247,.25), rgba(124,92,255,.18));}
+    .btn:hover{transform: translateY(-1px); transition:.15s}
+    h2{margin:0 0 10px; font-size:18px}
+    .muted{color:var(--muted)}
+    .list{margin:0; padding-left:18px}
+    .kpi{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .kpi .pill{
+      padding:8px 10px; border:1px solid var(--border); border-radius:999px; font-size:13px;
+      background:rgba(255,255,255,.03);
+    }
+    .section{margin-top:16px}
+    .two{display:grid; gap:14px}
+    @media(min-width:900px){ .two{grid-template-columns:1fr 1fr;} }
+    .tagrow{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{
+      font-size:12px; padding:6px 8px; border-radius:999px; border:1px solid var(--border);
+      background:rgba(255,255,255,.03); color:var(--muted);
+    }
+    .proj{
+      border:1px solid var(--border); border-radius:16px; padding:14px; background:rgba(255,255,255,.03);
+    }
+    .proj h3{margin:0; font-size:15.5px}
+    .proj .meta{margin-top:6px; color:var(--muted); font-size:13px}
+    .proj ul{margin:10px 0 0; padding-left:18px}
+    .small{font-size:13px}
+    .footer{
+      margin-top:22px; padding-top:14px; border-top:1px solid var(--border); color:var(--muted);
+      font-size:13px;
+    }
+    .ok{color:var(--ok)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="topbar">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <span class="badge">🇫🇷 France</span>
+        <span class="badge">Admin Systèmes • Réseaux • Cloud Azure</span>
+        <span class="badge">AZ-900 • AI-900 • AZ-104 (en cours)</span>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="mailto:providencegoma@gmail.com">📧 providencegoma@gmail.com</a>
+        <a class="btn" href="tel:+33608905766">📞 06 08 90 57 66</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- LEFT -->
+      <div class="card">
+        <div class="hero">
+          <div class="photo" title="Photo">
+            <!-- Mets ton image dans le repo : photo.jpg -->
+            <img src="photo.jpg" alt="Photo Providence Goma Goma" onerror="this.style.display='none';" />
+          </div>
+          <div>
+            <h1>PROVIDENCE GOMA GOMA</h1>
+            <div class="subtitle">
+              Étudiant passionné par l’administration systèmes, réseaux et cloud — recherche <b>emploi / alternance</b> en France.
+            </div>
+
+            <div class="actions">
+              <a class="btn primary" href="https://github.com/ggp2" target="_blank" rel="noreferrer">🐙 GitHub: ggp2</a>
+              <!-- Optionnel : mets ici ton LinkedIn -->
+              <!-- <a class="btn" href="https://www.linkedin.com/in/TON-LINKEDIN/" target="_blank" rel="noreferrer">💼 LinkedIn</a> -->
+              <a class="btn" href="#projets">📌 Voir mes projets</a>
+            </div>
+
+            <div class="kpi">
+              <span class="pill">✅ Windows Server (AD DS, GPO)</span>
+              <span class="pill">✅ Linux (Ubuntu, Debian, RHEL/CentOS)</span>
+              <span class="pill">✅ Nginx • Postfix • Samba</span>
+              <span class="pill">✅ Zabbix • Terraform • GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>🎯 Objectif professionnel</h2>
+          <p class="muted">
+            Étudiant passionné par l’administration systèmes, réseaux et le cloud, je recherche une opportunité en France afin de
+            mettre en pratique mes compétences techniques dans un environnement professionnel et continuer à monter en expertise.
+          </p>
+        </div>
+
+        <div class="section two">
+          <div class="proj">
+            <h3>🛠️ Compétences techniques</h3>
+            <div class="tagrow" style="margin-top:10px">
+              <span class="tag">Linux: RHEL / CentOS / Ubuntu / Debian</span>
+              <span class="tag">Windows Server 2016/2019/2022</span>
+              <span class="tag">AD DS • GPO</span>
+              <span class="tag">TCP/IP • DNS • DHCP • VPN • SSH • NTP</span>
+              <span class="tag">LAN/VLAN • HSRP • VTP • NAT • SD-WAN</span>
+              <span class="tag">Terraform (IaC)</span>
+              <span class="tag">Git / GitHub Actions</span>
+              <span class="tag">FirewallD • SELinux • RBAC Azure</span>
+              <span class="tag">KVM • VMware vSphere</span>
+              <span class="tag">Python • Bash • Docker • Ansible</span>
+            </div>
+          </div>
+
+          <div class="proj">
+            <h3>🎓 Formation & Expérience</h3>
+            <ul class="list">
+              <li><b>MASTER</b> — Architectes de Systèmes d’Information (ETNA) <span class="muted">• Mars 2026 → Mars 2028</span></li>
+              <li><b>LICENCE</b> — Université de Toulouse</li>
+              <li><b>Formateur Administration GNU/Linux</b> — iConnect (Congo) <span class="muted">• 2021–2023</span></li>
+            </ul>
+
+            <div style="margin-top:12px">
+              <h3>📜 Certifications</h3>
+              <ul class="list">
+                <li><b>AZ-900</b> — Microsoft Azure Fundamentals <span class="ok">✔</span></li>
+                <li><b>AI-900</b> — Microsoft Azure AI Fundamentals <span class="ok">✔</span></li>
+                <li><b>AZ-104</b> — Microsoft Azure Administrator <span class="muted">(en cours)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="card">
+        <h2>📌 Infos rapides</h2>
+        <p class="muted small" style="margin-top:0">
+          Ajoute ici ton <b>LinkedIn</b> et un lien vers ton <b>CV PDF</b> quand tu l’auras (ou je peux te le générer).
+        </p>
+
+        <div class="section">
+          <h2>✅ Ce que je sais faire</h2>
+          <ul class="list">
+            <li>Déployer une infra Windows/Linux intégrée (AD, DNS, DHCP, NTP)</li>
+            <li>Mettre en place un serveur fichiers (Samba + AD) avec audit</li>
+            <li>Déployer une messagerie (Postfix/Dovecot + AD) sécurisée TLS</li>
+            <li>Héberger un site web (Nginx) + logs + sécurité</li>
+            <li>Superviser (Zabbix) + alertes + dashboards</li>
+            <li>Automatiser sur Azure avec Terraform (Hub-Spoke)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>🧩 Stack</h2>
+          <div class="tagrow">
+            <span class="tag">Active Directory</span>
+            <span class="tag">Samba</span>
+            <span class="tag">Postfix/Dovecot</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Zabbix</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">Azure</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>📬 Contact</h2>
+          <p class="muted small">
+            Email : <a href="mailto:providencegoma@gmail.com">providencegoma@gmail.com</a><br/>
+            Téléphone : <a href="tel:+33608905766">06 08 90 57 66</a><br/>
+            GitHub : <a href="https://github.com/ggp2" target="_blank" rel="noreferrer">github.com/ggp2</a>
+          </p>
+        </div>
+
+        <div class="footer">
+          Astuce : mets ton CV PDF dans le repo et ajoute un lien ici (ex: <code>CV_Providence_Goma.pdf</code>).
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projets" class="card" style="margin-top:16px">
+      <h2>🚀 Projets techniques</h2>
+
+      <div class="proj" style="margin-top:10px">
+        <h3>1) Infrastructure Linux avec authentification AD</h3>
+        <div class="meta">Architecture Linux/Windows d’entreprise, services critiques + intégration AD (SSSD, Kerberos) + supervision Zabbix + KVM.</div>
+        <ul>
+          <li>Services : DNS, DHCP, NTP (Chrony), Samba (fichiers), messagerie, bases de données</li>
+          <li>Objectif : infrastructure d’entreprise cohérente, sécurisée, observable</li>
+        </ul>
+        <p class="small" style="margin-top:10px">
+          🔗 Repo : <a href="https://github.com/ggp2/Entreprise-linux-ad" target="_blank" rel="noreferrer">github.com/ggp2/Entreprise-linux-ad</a>
+        </p>
+      </div>
+
+      <div class="proj" style="margin-top:12px">
+        <h3>2) Architecture Cloud Azure — Hub-Spoke (Terraform)</h3>
+        <div class="meta">Infrastructure Azure sécurisée Hub-Spoke, IaC Terraform, Key Vault, backend distant, Log Analytics, PaaS (App Service, Azure SQL).</div>
+        <ul>
+          <li>Automatisation Terraform (modules, backend, secrets)</li>
+          <li>Supervision : Log Analytics</li>
+          <li>Objectif : base Cloud pro “production ready”</li>
+        </ul>
+        <p class="small" style="margin-top:10px">
+          🔗 Repo : <a href="https://github.com/ggp2/azure-terraform-hubspoke" target="_blank" rel="noreferrer">github.com/ggp2/azure-terraform-hubspoke</a>
+        </p>
+      </div>
+
+      <div class="footer">
+        © <span id="y"></span> Providence Goma Goma — Portfolio. 
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
