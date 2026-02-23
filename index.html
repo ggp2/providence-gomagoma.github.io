@@ -12,6 +12,7 @@
       --border:rgba(255,255,255,.08);
     }
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
       background: radial-gradient(1200px 600px at 10% -10%, rgba(79,195,247,.25), transparent 60%),
@@ -99,8 +100,8 @@
         <span class="badge">AZ-900 • AZ-104 (en cours)</span>
       </div>
       <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a class="btn" href="mailto:providencegoma@gmail.com">📧 providencegoma@gmail.com</a>
-        <a class="btn" href="tel:+33608905766">📞 06 08 90 57 66</a>
+        <a class="btn" href="mailto:providencegoma@gmail.com" target="_blank" rel="noreferrer" aria-label="Envoyer un email">📧 providencegoma@gmail.com</a>
+        <a class="btn" href="tel:+33608905766" target="_blank" rel="noreferrer" aria-label="Appeler par téléphone">📞 06 08 90 57 66</a>
       </div>
     </div>
 
@@ -115,14 +116,12 @@
           <div>
             <h1>PROVIDENCE GOMA GOMA</h1>
             <div class="subtitle">
-              Étudiant passionné par l’administration systèmes, réseaux et cloud — recherche <b> alternance</b>
+              Étudiant passionné par l’administration systèmes, réseaux et cloud — recherche <b>alternance</b>
             </div>
 
             <div class="actions">
-              <a class="btn primary" href="https://github.com/ggp2" target="_blank" rel="noreferrer">🐙 GitHub: ggp2</a>
-              <!-- Optionnel : mets ici ton LinkedIn -->
-              <!-- <a class="btn" href="https://www.linkedin.com/in/TON-LINKEDIN/" target="_blank" rel="noreferrer">💼 LinkedIn</a> -->
-              <a class="btn" href="#projets">📌 Voir mes projets</a>
+              <a class="btn primary" href="https://github.com/ggp2" target="_blank" rel="noreferrer" aria-label="Ouvrir mon GitHub">🐙 GitHub: ggp2</a>
+              <a class="btn" href="#projets" aria-label="Aller à la section projets">📌 Voir mes projets</a>
             </div>
 
             <div class="kpi">
@@ -137,7 +136,7 @@
         <div class="section">
           <h2>🎯 Objectif professionnel</h2>
           <p class="muted">
-            Étudiant passionné par l’administration systèmes, réseaux et le cloud, je recherche une alternance  afin de
+            Étudiant passionné par l’administration systèmes, réseaux et le cloud, je recherche une alternance afin de
             mettre en pratique mes compétences techniques dans un environnement professionnel et continuer à monter en expertise.
           </p>
         </div>
@@ -182,19 +181,21 @@
       <div class="card">
         <h2>📌 Infos rapides</h2>
         <p class="muted small" style="margin-top:0">
-  <a href="https://www.linkedin.com/in/providence-goma-86a141337"
-     target="_blank"
-     style="font-weight:bold; color:inherit; text-decoration:none;">
-    www.linkedin.com/in/providence-goma-86a141337
-  </a>
-</p>
+          <a href="https://www.linkedin.com/in/providence-goma-86a141337"
+             target="_blank"
+             rel="noreferrer"
+             style="font-weight:bold; color:inherit; text-decoration:none;"
+             aria-label="Ouvrir mon LinkedIn">
+            www.linkedin.com/in/providence-goma-86a141337
+          </a>
+        </p>
 
         <div class="section">
           <h2>✅ Ce que je sais faire</h2>
           <ul class="list">
             <li>Déployer une infra Linux intégrée (AD, DNS, DHCP, NTP)</li>
             <li>Mettre en place un serveur fichiers (Samba + AD) avec audit</li>
-            <li>Déployer une messagerie (Postfix/Dovecot + AD), Zimmbra collaborative sécurisée TLS</li>
+            <li>Déployer une messagerie (Postfix/Dovecot + AD), Zimbra collaborative sécurisée TLS</li>
             <li>Héberger un site web (Nginx) + logs + sécurité</li>
             <li>Superviser (Zabbix) + alertes + dashboards</li>
             <li>Automatiser sur Azure avec Terraform (Hub-Spoke)</li>
@@ -217,15 +218,13 @@
         <div class="section">
           <h2>📬 Contact</h2>
           <p class="muted small">
-            Email : <a href="mailto:providencegoma@gmail.com">providencegoma@gmail.com</a><br/>
-            Téléphone : <a href="tel:+33608905766">06 08 90 57 66</a><br/>
+            Email : <a href="mailto:providencegoma@gmail.com" target="_blank" rel="noreferrer">providencegoma@gmail.com</a><br/>
+            Téléphone : <a href="tel:+33608905766" target="_blank" rel="noreferrer">06 08 90 57 66</a><br/>
             GitHub : <a href="https://github.com/ggp2" target="_blank" rel="noreferrer">github.com/ggp2</a>
           </p>
         </div>
 
-        <div class="footer">
-        
-        </div>
+        <div class="footer"></div>
       </div>
     </div>
 
@@ -259,28 +258,26 @@
       </div>
 
       <div class="proj" style="margin-top:12px">
-  <h3>3) Pipeline CI/CD Cloud/DevOps sur Azure (Terraform • Docker • GitHub Actions)</h3>
-  <div class="meta">
-    Conception et déploiement d’un pipeline CI/CD complet sur Microsoft Azure avec Infrastructure as Code,
-    build/tests automatisés et déploiement continu sur Azure Container Apps.
-  </div>
-  <ul>
-    <li>Build & tests automatiques (pytest)</li>
-    <li>Déploiement continu sur Azure Container Apps</li>
-    <li>Authentification sécurisée via OIDC (GitHub ↔ Azure AD) sans mot de passe</li>
-    <li>Gestion des identités : Managed Identity & RBAC</li>
-    <li>Infrastructure as Code : Terraform (state, providers)</li>
-    <li>Dépannage : permissions ACR (AcrPull), erreurs ImagePullBackOff, conflits de ports, timeouts réseau</li>
-  </ul>
-  <p class="small" style="margin-top:10px">
-    🔗 Repo : <a href="https://github.com/ggp2/ci-cd-azure-devops-pipeline" target="_blank" rel="noreferrer">github.com/ggp2/ci-cd-azure-devops-pipeline</a>
-  </p>
-</div>
+        <h3>3) Pipeline CI/CD Cloud/DevOps sur Azure (Terraform • Docker • GitHub Actions)</h3>
+        <div class="meta">
+          Conception et déploiement d’un pipeline CI/CD complet sur Microsoft Azure avec Infrastructure as Code,
+          build/tests automatisés et déploiement continu sur Azure Container Apps.
+        </div>
+        <ul>
+          <li>Build & tests automatiques (pytest)</li>
+          <li>Déploiement continu sur Azure Container Apps</li>
+          <li>Authentification sécurisée via OIDC (GitHub ↔ Azure AD) sans mot de passe</li>
+          <li>Gestion des identités : Managed Identity & RBAC</li>
+          <li>Infrastructure as Code : Terraform (state, providers)</li>
+          <li>Dépannage : permissions ACR (AcrPull), erreurs ImagePullBackOff, conflits de ports, timeouts réseau</li>
+        </ul>
+        <p class="small" style="margin-top:10px">
+          🔗 Repo : <a href="https://github.com/ggp2/ci-cd-azure-devops-pipeline" target="_blank" rel="noreferrer">github.com/ggp2/ci-cd-azure-devops-pipeline</a>
+        </p>
+      </div>
 
-
-      
       <div class="footer">
-        © <span id="y"></span> Providence Goma Goma — Portfolio. 
+        © <span id="y"></span> Providence Goma Goma — Portfolio.
       </div>
     </div>
 
