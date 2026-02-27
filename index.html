@@ -276,6 +276,31 @@
         </p>
       </div>
 
+<div class="proj" style="margin-top:12px">
+  <h3>4) Azure HA Platform — Architecture Cloud Haute Disponibilité</h3>
+  <div class="meta">
+    Conception et déploiement d’une plateforme web hautement disponible sur Microsoft Azure en utilisant une approche Infrastructure as Code (Terraform) moderne et sécurisée.
+  </div>
+
+  <ul>
+    <li>Architecture : Virtual Network segmenté (subnets public / privé)</li>
+    <li>Load Balancer public avec health probes</li>
+    <li>Azure VM Scale Set avec autoscaling et Rolling Upgrades</li>
+    <li>Application conteneurisée Docker (Nginx) déployée sur plusieurs instances</li>
+    <li>Monitoring & alerting via Azure Monitor + Log Analytics</li>
+    <li>Backend Terraform distant sur Azure Storage</li>
+    <li>CI/CD sécurisé via GitHub Actions avec authentification OIDC (sans secrets stockés)</li>
+  </ul>
+
+  <p class="small" style="margin-top:10px">
+    🔗 Repo :
+    <a href="https://github.com/ggp2/azure-ha-platform" target="_blank" rel="noreferrer">
+      github.com/ggp2/azure-ha-platform
+    </a>
+  </p>
+</div>
+
+      
       <div class="footer">
         © <span id="y"></span> Providence Goma Goma — Portfolio.
       </div>
